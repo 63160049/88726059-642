@@ -8,13 +8,14 @@
 <body>
     <h3>Hotel Booking</h3>
     <form method="POST" action="https://angsila.cs.buu.ac.th/~wittawas/642/88726059/services/post.php">
-        <table border="2">
+        <table>
         <tr>
             <td>
                 <label for="Room Type">Room Type:</label>
             </td>
             <td>
                     <select name="Room type">
+                    <option value="0">Please Select</option>
                     <option value="Standard">Standard</option>
                     <option value="Luxury">Luxury</option>
                     <option value="Deluxe">Deluxe</option>
@@ -27,6 +28,7 @@
             </td>
             <td>
                 <select name="Number guest">
+                    <option value="0">Please Select</option>
                     <option value="1-2">1-2</option>
                     <option value="3-4">3-4</option>
                     <option value="5-6">5-6</option>
@@ -39,10 +41,8 @@
                 <label for="Name">Name:</label>
         </td>
             <td>
-                <input type="text" name="fname" id="fname">
-            </td>
-            <td>
-                <input type="text" name="lname" id="lname">
+                <input type="text" placeholder="First"name="fname" id="fname">  &nbsp; &nbsp;
+                <input type="text" placeholder="Last"name="lname" id="lname">
             </td>
         </tr>
         <tr>
@@ -50,18 +50,16 @@
                 <label for="Email">Email:</label>
             </td>
             <td>
-                <input type="text" name="email" id="email">
+                <input type="text" placeholder="Email"name="email" id="email">
             </td>
         </tr>
         <tr>
             <td>
-                <label for="Arrival">Arrival:</label>
+                <label for="arrivaldate" for="arrivaltime">Arrival</label>
             </td>
             <td>
-                <input type="text" name="arrivaldate" id="arrivaldate">
-            </td>
-            <td>
-                <input type="text" name="arrivaltime" id="arrivaltime">
+                <input type="date" name="arrivaldate" id="arrivaldate">   &nbsp; &nbsp;
+                <input type="time" name="arrivaltime" id="arrivaltime">
             </td>
         </tr>
         <tr>
@@ -69,10 +67,8 @@
                 <label for="Departure">Departure:</label>
             </td>
             <td>
-                <input type="text" name="departuredate" id="departuredate">
-            </td>
-            <td>
-                <input type="text" name="departuretime" id="departuretime">
+                <input type="date" name="departuredate" id="departuredate">  &nbsp; &nbsp;
+                <input type="time" name="departuretime" id="departuretime">
             </td>
         </tr>
         <tr>
@@ -81,7 +77,7 @@
             </td>
             <td>
                 <input type="radio" name="Free Pickup" id="Free Pickup" value="Yes">Yes, Sure!.
-            <br><br>
+            <br>
                 <input type="radio" name="Free Pickup" id="Free Pickup" value="No">No, I already rented a cal.
             </td>
         </tr>
@@ -90,7 +86,7 @@
                 <label for="Flight Number">Flight Number:</label>
             </td>
             <td>
-                <input type="text" name="flightnum" id="flightnum">
+                <input type="text" placeholder="c1209" name="flightnum" id="flightnum">
             </td>
         </tr>
         <tr>
